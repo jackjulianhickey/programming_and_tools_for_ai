@@ -34,8 +34,8 @@ When AI is utilized to debug or suggest neater implementations, the prompt and t
 | Week | Topic | Core Concepts (Exam Prep) | Status |
 | :--- | :--- | :--- | :--- |
 | **Week 1** | [Intro & Python Basics](./week_01/) | Loops, Functions, Types | 🟢 Complete |
-| **Week 2** | [Topic Name](./week_02/) | Concept 1, Concept 2 | ⚪ Pending |
-| **Week 3** | [Topic Name](./week_03/) | Concept 1, Concept 2 | ⚪ Pending |
+| **Week 2** | [Dictionaries & N-Grams](./week_02/) | Dictionaries, Tallying, Grouping, N-Gram Language Models, File I/O | 🟢 Complete  |
+| **Week 3** | [Trees, Recursion & JSON](./week_03/) | Tree Traversal, Recursive Functions, Bill of Materials (BOM), JSON I/O | 🟢 Complete  |
 | **Week 4** | [Topic Name](./week_04/) | Concept 1, Concept 2 | ⚪ Pending |
 | **Week 5** | Review & Catch-up | *Mid-semester consolidation* | ⚪ Pending |
 | **Week 6** | [Topic Name](./week_06/) | Concept 1, Concept 2 | ⚪ Pending |
