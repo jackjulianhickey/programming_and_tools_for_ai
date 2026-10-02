@@ -89,8 +89,8 @@ def find_part(node, path):
             remaining_path = "/".join(parts[1:])
             try:
                 return find_part(child, remaining_path)
-            except:
-                raise KeyError(f"{path}")
-    raise KeyError(f"{path}")
+            except KeyError:
+                raise KeyError(path)
+    raise KeyError(path)
 
 
