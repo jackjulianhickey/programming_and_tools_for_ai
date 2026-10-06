@@ -30,4 +30,6 @@ def get_or(d, key, default):
     >>> get_or({"ann": 0}, "ann", 99)
     0
     """
-    return  d.get(key, default)
+    if key in d:
+        return d[key]
+    return default

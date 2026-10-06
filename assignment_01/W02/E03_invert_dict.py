@@ -31,7 +31,7 @@ def invert_dict(d):
     >>> invert_dict({"a": 1, "b": 1})
     {1: 'b'}
     """
-    dict_inverted = {v: k for k, v in d.items()}
+    dict_inverted = {value: key for key, value in d.items()}
     return dict_inverted
 
 

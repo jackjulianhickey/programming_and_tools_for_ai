@@ -30,7 +30,13 @@ def merge(d1, d2):
     >>> second
     {'a': 17, 'c': 3}
     """
-    merged_dict = {**d1, **d2} # ** is the dictionary unpacking operator. It takes both the key-value pair.
+    merged_dict = {}
+    for k in d1:
+        merged_dict[k] = d1[k]
+    for k in d2:
+        merged_dict[k] = d2[k]
     return merged_dict
+#     merged_dict = {**d1, **d2} 
+#     return merged_dict
 # ** is the dictionary unpacking operator. It takes both the key-value pair. 
 # Using * is spcifically for unpacking iterables, while ** is for unpacking dictionaries.
