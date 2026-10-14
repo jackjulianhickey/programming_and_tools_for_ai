@@ -284,7 +284,11 @@ def report(paths):
             first_bad = first_bad or path
             continue
         for name, status, attempted, failed in results:
-            total += 1
+            # Given code with no doctests (the lecture's game loop, a key
+            # reader) is listed but not counted, or a finished week could
+            # never reach "N of N".
+            if status != "no doctests":
+                total += 1
             if status == "pass":
                 emit(f"  PASS     {name}  ({attempted} doctests)")
                 passed += 1
