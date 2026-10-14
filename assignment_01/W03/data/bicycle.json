@@ -1,0 +1,12 @@
+{"name": "bicycle", "qty": 1, "children": [
+    {"name": "wheel", "qty": 2, "children": [
+        {"name": "rim",   "qty": 1,  "material": "aluminium", "mass": 380, "cost": 24.00},
+        {"name": "spoke", "qty": 32, "material": "steel",     "mass": 5,   "cost": 0.40},
+        {"name": "hub",   "qty": 1,  "material": "steel",     "mass": 200, "cost": 12.00},
+        {"name": "tyre",  "qty": 1,  "material": "rubber",    "mass": 320, "cost": 18.00}
+    ]},
+    {"name": "frame",     "qty": 1, "material": "steel",     "mass": 2200, "cost": 95.00},
+    {"name": "handlebar", "qty": 1, "material": "aluminium", "mass": 300,  "cost": 22.00},
+    {"name": "saddle",    "qty": 1, "material": "plastic",   "mass": 260,  "cost": 15.00},
+    {"name": "chain",     "qty": 1, "material": "steel",     "mass": 300,  "cost": 14.00}
+]}
