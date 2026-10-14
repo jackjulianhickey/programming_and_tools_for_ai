@@ -35,6 +35,6 @@ def invert_dict(d):
     return dict_inverted
 
 
-# ANSWER: The last doctest loses a pair because dictionaries cannot have duplicate keys. 
-# In the example `{"a": 1, "b": 1}`, both "a" and "b" have the same value of 1. 
-# When inverting the dictionary, the key 1 can only map to one value, so it ends up mapping to 'b', which is the last key processed.
+# The last doctest loses a pair because dictionaries cannot have duplicate keys. 
+# In the example `{"a": 1, "b": 1}` both "a" and "b" have the same value of 1. 
+# When inverting the dictionary the key 1 can only map to one value so it ends up mapping to 'b', which is the last key processed.

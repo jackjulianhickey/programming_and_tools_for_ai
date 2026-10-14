@@ -73,4 +73,5 @@ def crack(s):
         score.append((english_score(list[i][1]), list[i][1]))
     return max(score)[1]
 
-# It fails because even though these are the most commonly used letters that does not a word garauntee. 
+# It fails because even though these are the most commonly used letters that does not a word guarantee. 
+# An dictionary of english words to compare the result with could be a solution.

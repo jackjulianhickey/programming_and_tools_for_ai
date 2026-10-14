@@ -53,3 +53,4 @@ def is_hashable(x):
 
 
 # ANSWER: The reason is it holds an object that is mutable and so the values of the list can change and are mutable.
+#  We cannot hash mutable objects as they may change next time and we would have an invalid hash unless we update the hash everytime the mutable object changes.

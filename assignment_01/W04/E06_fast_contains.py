@@ -215,10 +215,21 @@ if __name__ == "__main__":
     for n in (500, 2000, 8000):
         row(n)
 
-
+"""
 # ANSWER: 
 #        |    PairListDict |SimpleDict (E01) |  + __contains__
 #      n | present  absent | present  absent | present  absent
 #    500 |     7.6    14.3 |    22.4    45.6 |    0.29    0.28
 #   2000 |    31.6    60.3 |    91.5   173.7 |    0.29    0.28
 #   8000 |   125.3   234.1 |   375.0   689.2 |    0.29    0.28
+
+  1. SimpleDict compares every key in order and goes through every bucket.
+     PairLitsDict simply has to go through a flat list.
+
+  2. For the first two it must look through every item to conclude if 
+     the item is present or absent.
+
+  3. Implementing __contains__ provided the impelemtation
+     needed for in to look up the key via hashing rather than 
+     doing a full iteration of the list of items.
+"""

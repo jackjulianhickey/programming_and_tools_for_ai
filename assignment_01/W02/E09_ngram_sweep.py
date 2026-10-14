@@ -104,4 +104,7 @@ if __name__ == "__main__":
         print(f"  n = {k + 1:2d}  (k = {k})   {score:.1%}")
 
 
-# ANSWER: (the QUESTION is at the top of this file)
+# ANSWER: 
+#   1) n = 2 achieved 87.5%
+#   2) It takes a lot more information for these to make meaningful predictions
+#       and there is so many combinations it may be creating very niche decisions.
