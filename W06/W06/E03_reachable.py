@@ -36,16 +36,16 @@ def reachable(successors, start):
     ['c']
     """
     frontier = deque([start])
-    visted = {start}
+    visited = {start}
 
     while frontier:
         state = frontier.popleft()
 
         for nxt in successors(state):
-            if nxt not in visted:
-                visted.add(nxt)
+            if nxt not in visited:
+                visited.add(nxt)
                 frontier.append(nxt)
-    return visted
+    return visited
 
 def connected(successors, a, b):
     """Is there any route at all from `a` to `b`?
