@@ -12,7 +12,7 @@ The primary goal of this repository is to document my problem-solving process, d
 ## Repository Structure
 The workspace is divided by week and technology:
 
-* `week_01/` to `week_10/`: Python 3 lecture notes (`.ipynb`), exercises (`.py`), and test suites.
+* `week_01/` to `week_04/`, `W06/` to `week_10/`: Python 3 lecture notes (`.ipynb`), exercises (`.py`), and test suites.
 * `assignment_01/`: Mid-semester portfolio submission (Weeks 1–4 exercises, self-check suite, and submission archive).
 * `r_bootcamp/`: Self-paced R language materials and exercises.
 * `utils/`: Shared Python functions and helper scripts imported across multiple weeks.
@@ -39,8 +39,8 @@ When AI is utilized to debug or suggest neater implementations, the prompt and t
 | **Week 3** | [Trees, Recursion & JSON](./week_03/) | Tree Traversal, Recursive Functions, Bill of Materials (BOM), JSON I/O | 🟢 Complete  |
 | **Week 4** | [Hash Tables & Dict Internals](./week_04/) | Hash Functions, Buckets, Collisions, Python Data Model, Computational Complexity | 🟢 Complete |
 | **Week 5** | [Review & Catch-up / Assignment 1](./assignment_01/) | Mid-semester consolidation, portfolio review & [Assignment 1](./assignment_01/) submission | 🟢 Complete |
-| **Week 6** | [Topic Name](./week_06/) | Concept 1, Concept 2 | ⚪ Pending |
-| **Week 7** | [Topic Name](./week_07/) | Concept 1, Concept 2 | ⚪ Pending |
+| **Week 6** | [Graph Search & State Spaces](./W06/) | State Space Representation, BFS, DFS, Dijkstra's Algorithm, Priority Queues, Shortest Path | 🟢 Complete |
+| **Week 7** | [Dynamic Programming & Sequence Alignment](./W07/) | Memoization vs Tabulation, Levenshtein Distance, Traceback, Dynamic Time Warping (DTW) | 🟢 Complete |
 | **Week 8** | [Topic Name](./week_08/) | Concept 1, Concept 2 | ⚪ Pending |
 | **Week 9** | [Topic Name](./week_09/) | Numerical Computing | ⚪ Pending |
 | **Week 10** | [Topic Name](./week_10/) | Advanced Topics | ⚪ Pending |
