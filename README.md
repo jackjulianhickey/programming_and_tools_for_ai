@@ -41,7 +41,7 @@ When AI is utilized to debug or suggest neater implementations, the prompt and t
 | **Week 5** | [Review & Catch-up / Assignment 1](./assignment_01/) | Mid-semester consolidation, portfolio review & [Assignment 1](./assignment_01/) submission | 🟢 Complete |
 | **Week 6** | [Graph Search & State Spaces](./W06/) | State Space Representation, BFS, DFS, Dijkstra's Algorithm, Priority Queues, Shortest Path | 🟢 Complete |
 | **Week 7** | [Dynamic Programming & Sequence Alignment](./W07/) | Memoization vs Tabulation, Levenshtein Distance, Traceback, Dynamic Time Warping (DTW) | 🟢 Complete |
-| **Week 8** | [Topic Name](./week_08/) | Concept 1, Concept 2 | ⚪ Pending |
+| **Week 8** | [NumPy, Vectorisation & Broadcasting](./W08/) | Vectorisation, Broadcasting Rules, Boolean Masking, Axis Reductions, Fancy Indexing, Matrix Multiplication (@), Image Representation | 🟢 Complete |
 | **Week 9** | [Topic Name](./week_09/) | Numerical Computing | ⚪ Pending |
 | **Week 10** | [Topic Name](./week_10/) | Advanced Topics | ⚪ Pending |
 | **Weeks 11-12** | [R Boot Camp](./r_bootcamp/) | R Syntax, Data Frames | ⚪ Pending |
