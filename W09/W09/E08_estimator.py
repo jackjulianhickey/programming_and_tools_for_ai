@@ -83,7 +83,7 @@ def accuracy(model, X, y):
     >>> accuracy(model, np.array([[3.1], [6.5]]), np.array(["stork", "swan"]))
     0.5
     """
-    return model.score(X, y)
+    return float(model.score(X, y))
 
 # Write it once yourself, then use the built-in for the rest of your life:
 # accuracy is model.score with a float() round it. Every scikit-learn
