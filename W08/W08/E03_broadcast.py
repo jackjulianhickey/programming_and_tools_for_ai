@@ -40,7 +40,7 @@ def combine(A, b, c, d):
     array([[  2.,   3., 104.],
            [ 15.,  16., 117.]])
     """
-    return A + b.reshape(-1, 1) + c.reshape(1, -1) + d
+    return A + b.reshape(-1, 1) + c + d
 
 
 def times_table(n):
@@ -57,4 +57,10 @@ def times_table(n):
     """
     return np.array(range(1, n+1)).reshape(-1, 1) * np.array(range(1, n + 1))
 
-# ANSWER: (the QUESTION is at the top of this file)
+# ANSWER: A has shape (n, m), b has shape (n,), and c has shape (m,).
+# When broadcasting, NumPy aligns shapes from right to left and pads missing
+# dimensions on the left with 1.
+# For c, this becomes (1, m), which aligns with the columns of A and stretches down the rows.
+# For b, (n,) aligns with the trailing axis (the columns m), which is the wrong axis
+# and causes an error unless n == m.
+# Reshaping b to (n, 1) puts n on the rows and lets the 1 stretch across the columns.
