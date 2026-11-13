@@ -85,18 +85,13 @@ def dtw_symbols(a, b):
     return D[-1][-1]
 
 
-# ANSWER 1: with tol = 0 every comparison of measured floats fails, so every
-# cost is 1 and the distance stops depending on the values at all --- 1.0
-# against 1.05 scores the same as 1.0 against 999.0. `tol` restores a little of
-# the meaning, but only a little: it turns a distance into a yes-or-no at one
-# arbitrary threshold, and 1.0 against 1.05 still scores the same as 1.0
-# against 999.0 once both are outside it. DTW's `abs(x - y)` keeps the
-# magnitude, which is the whole reason it exists.
+# ANSWER 1: When no two floats are exactly equal the cost will always be 1 resulting the lengths of the sequences.
+# Tol ensures that they are within a set tolerance limit so that floating points
+# can be compared without the subtraction of these values
+# needing to fall to zero which might not be possible because of floating points. 
+# Tol doesn't really solve the problem as magnitude is ignored giving the same cost no matter the values.
 
-# ANSWER 2: DTW has no deletion. Going down or right reuses a value rather than
-# dropping it, so a repeated letter is free: the second "o" of "bookkeeper"
-# matches the single "o" of "bokeper" at no cost, and likewise for "kk" and
-# "ee". DTW therefore cannot see doubled letters at all, which is exactly the
-# mistake spellcheckers most need to catch. It is the wrong tool here, and not
-# because it is worse --- being blind to a held note is what makes it right for
-# a time series.
+
+# ANSWER 2: DTW doesn't see repeated chars because of its design. It lacks a deletion
+# and cannot see double letters at all because of how it streches it's checking. This makes it
+# entirely unsuitable as a spell checker.
