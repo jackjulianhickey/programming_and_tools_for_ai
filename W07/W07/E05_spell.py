@@ -43,4 +43,5 @@ def suggest(word, words, n=3):
 
 
 # ANSWER: If it is sorted based on distance only then words with a the same distance
-# are not sorted alphabetically and may not match the order of the doctests.                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+# are not sorted alphabetically and may not match the order of the doctests.
+# It's mostly an issue with the tests since a tie-breaking word is equally close.                                                                                                                                                                                                                                                                                                                                                                                                                                                 

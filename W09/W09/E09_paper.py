@@ -76,4 +76,9 @@ if __name__ == "__main__":
     main()
 
 
-# ANSWER: (the QUESTION is at the top of this file)
+# ANSWER: In the original paper Euclidean with K=5, cats off, norm on was the best score with 0.919.
+# In my test the best score was Chebyshev with K=5, cats off, norm on with a score of 0.910. 
+# I had to correct the number of train/test splits from 25 to 30.
+# Changing SEED changes which 20% of the 333 penguins are held out as the test set 
+# and how the remaining 266 are split across CV folds, which shifts the accuracies
+# because 266 birds is a small sample.

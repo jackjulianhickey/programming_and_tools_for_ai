@@ -72,4 +72,6 @@ def fill_with_median(df, column):
     return df_copy
 
 
-# ANSWER: (the QUESTION is at the top of this file)
+# ANSWER: We can fill in a missing measurement using the mean of the measurements and make assumptions provided we know the label.
+# However if we were to attempt to classify a row missing a label we would have nothing to go on. We cannot use the mean to classify it.
+# We cannot extrapolate an answer where we have none. It would risk corrupting the classifier.
